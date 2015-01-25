@@ -5,26 +5,36 @@
   <title>Welcome</title>
   <link href="styles.css" rel="stylesheet" type="text/css">
 
+  <script src='lib/ajaxget.js'> </script>
+  <script src='lib/content.js'> </script>
+
 </head>
 <body>
   <header>
     <h1>Welcome</h1>
-    <p>This website will alow you to create Work Breakdown Trees PERT Charts and Gantt charts quickly and easily</p> 
+    <p>This website will alow you to create Work Breakdown Trees PERT Charts and Gantt charts quickly and easily</p>
   </header>
   <nav>
     <a href="index.php">Home</a>
     <a href="create.php">Create!</a>
     <a href="about_us.php">About Us</a>
-    <a href="about_charts.php">Help</a> 
+    <a href="about_charts.php">Help</a>
   </nav>
     <article>
     <section>
       <h1>
         Section Heading
       </h1>
-      <p>
-        Content
-      </p>
+      <p id="content"></p>
+      <form action="values.php" method="post">
+        1. <input type="text" id="1"><br>
+        2. <input type="text" id="2"><br>
+        3. <input type="text" id="3"><br>
+        4. <input type="text" id="4"><br>
+        5. <input type="text" id="5"><br>
+        6. <input type="text" id="6"><br>
+        <input type="Submit">
+      </form>
     </section>
   </article>
 </body>
