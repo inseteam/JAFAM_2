@@ -1,5 +1,6 @@
 *{
   font-family: Calibri;
+  font-size:18px;
 }
 header{
   text-align: center;
@@ -27,4 +28,25 @@ nav a, button{
 nav a:hover, button:hover{
   background: black;
   color: white
+}
+
+#createForm{
+  background:#CCCCCC;
+  width:12em;
+  height:15.5em;
+  box-shadow: 2.5px 2.5px 1.5px 0.5px rgba(0,0,0,0.5);
+}
+
+#createForm form{
+  padding:1em 0 0 0.5em;
+}
+
+#createForm form input{
+    height:1.5em;
+    margin-bottom:0.3em;
+    outline-color:black;
+}
+
+#createForm.hide{
+  display:none;
 }
