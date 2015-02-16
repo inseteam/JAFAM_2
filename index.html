@@ -5,10 +5,9 @@
   <title>Welcome</title>
   <link href="styles.css" rel="stylesheet" type="text/css" media="only screen and (min-width:480px)">
 
-  <script src='lib/ajaxget.js'> </script>
-  <script src='lib/content.js'> </script>
-  <script type="text/javascript" src='lib/menu.js'> </script>
   <script type="text/javascript" src='lib/jquery.js'> </script>
+  <script type="text/javascript" src='lib/buttons.js'> </script>
+  <script type="text/javascript" src='lib/menu.js'> </script>
 
 </head>
 <body>
@@ -17,27 +16,32 @@
     <p>This website will alow you to create Work Breakdown Trees PERT Charts and Gantt charts quickly and easily</p>
   </header>
   <nav id="navigation">
-    <a href="index.php">Home</a>
-    <a class="createButton" onclick="toggleMenu()">Create!</a>
-    <a href="about_us.php">About Us</a>
-    <a href="about_charts.php">Help</a>
+    <input type="button" value="Home" id="home"></input>
+    <input type="button" value="Create!" id="createButton"></input>
+    <input type="button" value="About Us" id="about_us"></input>
+    <input type="button" value="Help" id="about_charts"></input>
   </nav>
-    <article>
+  <article>
     <section>
       <h1>
         Section Heading
       </h1>
-      <p id="content"></p>
-      <section id="createForm">
-        <form action="values.php" method="post">
-          1. <input type="text" id="1"><br>
-          2. <input type="text" id="2"><br>
-          3. <input type="text" id="3"><br>
-          4. <input type="text" id="4"><br>
-          5. <input type="text" id="5"><br>
-          6. <input type="text" id="6"><br>
-          <input type="Submit">
-        </form>
+      <section id="content"></section>
+      <section id="menu">
+        <element id="sub_navigation">
+          <input type="button" value="Menu" id="menu_button"></input>
+        </element>
+        <element id="create_form">
+          <form action="values.php" method="post">
+            1. <input type="text" id="1"><br>
+            2. <input type="text" id="2"><br>
+            3. <input type="text" id="3"><br>
+            4. <input type="text" id="4"><br>
+            5. <input type="text" id="5"><br>
+            6. <input type="text" id="6"><br>
+            <input id="submit_button" type="Submit">
+          </form>
+        </element>
       </section>
     </section>
   </article>

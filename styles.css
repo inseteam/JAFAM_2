@@ -14,39 +14,96 @@ nav{
   padding: 0.5em;
   margin: 0em;
 }
-nav a, button{
+nav input, button{
   box-shadow: 2.5px 2.5px 1.5px 0.5px rgba(0,0,0,0.5);
   border-radius: 5px;
   text-decoration: none;
   padding: 0.5em;
-  background: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#999));
   color: black;
   transition: 1s;
   width: 5em auto;
   height: 3em auto;
-}
-nav a:hover, button:hover{
-  background: black;
-  color: white
+  border:none;
 }
 
-#createForm{
-  background:#CCCCCC;
-  width:12em;
-  height:15.5em;
-  box-shadow: 2.5px 2.5px 1.5px 0.5px rgba(0,0,0,0.5);
+nav input:hover, button:hover{
+  background: -webkit-gradient(linear, left top, left bottom, from(#999), to(#ccc));
+  color: white;
+  border:none;
+  cursor:pointer;
 }
 
-#createForm form{
-  padding:1em 0 0 0.5em;
+nav input:focus{
+  text-decoration:none;
+  outline:none;
 }
 
-#createForm form input{
-    height:1.5em;
-    margin-bottom:0.3em;
-    outline-color:black;
+#menu{
+  position:absolute;
 }
 
-#createForm.hide{
-  display:none;
+#sub_navigation{
+  margin:1em 0 0.5em 0;
+}
+
+#sub_navigation #menu_button{
+  margin-left:0.5em;
+  border-radius: 0 5px 5px 0;
+
+}
+
+#sub_navigation input{
+  border-radius: 5px;
+  padding: 0.5em;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#999));
+  color: black;
+  transition: 1s;
+  width: 5em auto;
+  height: 3em auto;
+  border:1px solid #A2A2A2;
+}
+
+#sub_navigation input:hover{
+  background: -webkit-gradient(linear, left top, left bottom, from(#999), to(#ccc));
+  color: white;
+  cursor:pointer;
+}
+
+#sub_navigation input:focus{
+  text-decoration:none;
+  outline:none;
+}
+
+#create_form{
+  margin-left:0.5em;
+  width:12.5em;
+  height:15em;
+  border:1px solid #A2A2A2;
+}
+
+#create_form form{
+  padding:0.5em 0 0 0.5em;
+}
+
+#create_form form input{
+  border-radius: 5px;
+  height:1.5em;
+  margin-bottom:0.3em;
+  outline-color:black;
+  border:1px solid #A2A2A2;
+}
+
+#create_form #submit_button{
+  background: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#999));
+  width:5em;
+  height:2em;
+  margin-left:6.4em;
+  transition: 1s;
+}
+
+#create_form #submit_button:hover{
+  background: -webkit-gradient(linear, left top, left bottom, from(#999), to(#ccc));
+  color: white;
+  cursor:pointer;
 }
