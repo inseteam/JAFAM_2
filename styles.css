@@ -48,7 +48,6 @@ nav input:focus{
 }
 
 #sub_navigation #menu_button{
-  margin-left:0.5em;
   border-radius: 0 5px 5px 0;
 
 }
@@ -76,10 +75,16 @@ nav input:focus{
 }
 
 #create_form{
-  margin-left:0.5em;
+  position:fixed;
+  margin-left:-13.1em;
   width:12.5em;
   height:15em;
   border:1px solid #A2A2A2;
+  transition:all 0.3s ease;
+}
+
+#create_form.show{
+  margin-left:0em;
 }
 
 #create_form form{
