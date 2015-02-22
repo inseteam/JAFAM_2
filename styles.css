@@ -9,6 +9,7 @@ header h1{
   text-align: center;
   text-size: 150;
 }
+
 nav{
   text-align: center;
   padding: 0.5em;
@@ -44,7 +45,7 @@ nav input:focus{
 }
 
 #sub_navigation{
-  margin:1em 0 0.5em 0;
+  margin:1em 0 0.5em -0.42em;
 }
 
 #sub_navigation #menu_button{
@@ -76,15 +77,12 @@ nav input:focus{
 
 #create_form{
   position:fixed;
-  margin-left:-13.1em;
+  margin-top:2.9em;
+  margin-left:-16.3em;
   width:12.5em;
   height:15em;
   border:1px solid #A2A2A2;
   transition:all 0.3s ease;
-}
-
-#create_form.show{
-  margin-left:0em;
 }
 
 #create_form form{
@@ -111,4 +109,12 @@ nav input:focus{
   background: -webkit-gradient(linear, left top, left bottom, from(#999), to(#ccc));
   color: white;
   cursor:pointer;
+}
+
+table{
+  margin-left:30em;
+}
+
+table thead td{
+  width:8em;
 }
