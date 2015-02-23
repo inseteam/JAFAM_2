@@ -6,6 +6,7 @@
 
 article {
     background: url(assets/textures/cream_dust.png) repeat 0 0;
+    height: 100%;
     
 }
 
@@ -60,7 +61,7 @@ nav input:focus{
   position: absolute;
 }
 
-section {
+.Notice, .mainPage {
     margin: 2%;
     margin_top: 5%;
     padding: 2.5%;
@@ -118,6 +119,12 @@ section {
   outline-color:black;
   border:1px solid #A2A2A2;
 }
+
+#content {
+    margin: 0;
+    padding 0 !important;
+}
+
 
 #create_form #submit_button{
   background: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#999));
