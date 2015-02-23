@@ -2,10 +2,26 @@
   font-family: Calibri;
   font-size:18px;
 }
-header{
+
+
+article {
+    background: url(assets/textures/cream_dust.png) repeat 0 0;
+    
+}
+
+body {
+  background: url(assets/textures/dark_embroidery.png) repeat 0 0;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  margin-bottom: 2.5%;
+  margin-top: 1%;
+}
+}
+
+.Notice{
   text-align: center;
 }
-header h1{
+.Notice h1{
   text-align: center;
   text-size: 150;
 }
@@ -41,7 +57,13 @@ nav input:focus{
 }
 
 #menu{
-  position:absolute;
+  position: absolute;
+}
+
+section {
+    margin: 2%;
+    margin_top: 5%;
+    padding: 2.5%;
 }
 
 #sub_navigation{
