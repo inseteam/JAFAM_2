@@ -78,9 +78,9 @@ nav input:focus{
 #create_form{
   position:fixed;
   margin-top:2.9em;
-  margin-left:-16.3em;
+  margin-left:-16.4em;
   width:12.5em;
-  height:15em;
+  height:17.4em;
   border:1px solid #A2A2A2;
   transition:all 0.3s ease;
 }
@@ -104,11 +104,27 @@ nav input:focus{
   margin-left:6.4em;
   transition: 1s;
 }
-
 #create_form #submit_button:hover{
   background: -webkit-gradient(linear, left top, left bottom, from(#999), to(#ccc));
   color: white;
   cursor:pointer;
+}
+
+#create_form #remove_button{
+  background: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#999));
+  width:5em;
+  height:2em;
+  margin-left:6.4em;
+  transition: 1s;
+}
+#create_form #remove_button:hover{
+  background: -webkit-gradient(linear, left top, left bottom, from(#999), to(#ccc));
+  color: white;
+  cursor:pointer;
+}
+
+#table_content{
+  margin-left:30em;
 }
 
 table{

@@ -25,14 +25,14 @@ DROP TABLE IF EXISTS `jafamdb`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `jafamdb` (
-  `id` int(11) NOT NULL,
-  `aa` varchar(45) NOT NULL,
-  `bb` varchar(45) NOT NULL,
-  `cc` varchar(45) NOT NULL,
-  `dd` varchar(45) NOT NULL,
-  `ee` varchar(45) NOT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `1._UNIQUE` (`id`)
+  `1.` int(11) NOT NULL,
+  `2.` varchar(45) NOT NULL,
+  `3.` varchar(45) NOT NULL,
+  `4.` varchar(45) NOT NULL,
+  `5.` varchar(45) NOT NULL,
+  `6.` varchar(45) NOT NULL,
+  PRIMARY KEY (`1.`),
+  UNIQUE KEY `1._UNIQUE` (`1.`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -54,4 +54,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-02-23 12:42:29
+-- Dump completed on 2015-02-22 21:01:09

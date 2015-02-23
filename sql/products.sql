@@ -18,31 +18,30 @@ USE `products`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `jafamdb`
+-- Table structure for table `productslist`
 --
 
-DROP TABLE IF EXISTS `jafamdb`;
+DROP TABLE IF EXISTS `productslist`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `jafamdb` (
-  `id` int(11) NOT NULL,
-  `aa` varchar(45) NOT NULL,
-  `bb` varchar(45) NOT NULL,
-  `cc` varchar(45) NOT NULL,
-  `dd` varchar(45) NOT NULL,
-  `ee` varchar(45) NOT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `1._UNIQUE` (`id`)
+CREATE TABLE `productslist` (
+  `productid` int(11) NOT NULL,
+  `productname` varchar(45) NOT NULL,
+  `price` decimal(6,2) NOT NULL,
+  `available` varchar(5) NOT NULL,
+  PRIMARY KEY (`productid`),
+  UNIQUE KEY `productid_UNIQUE` (`productid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `jafamdb`
+-- Dumping data for table `productslist`
 --
 
-LOCK TABLES `jafamdb` WRITE;
-/*!40000 ALTER TABLE `jafamdb` DISABLE KEYS */;
-/*!40000 ALTER TABLE `jafamdb` ENABLE KEYS */;
+LOCK TABLES `productslist` WRITE;
+/*!40000 ALTER TABLE `productslist` DISABLE KEYS */;
+INSERT INTO `productslist` VALUES (0,'shoes1',10.99,'yes'),(1,'shoes2',20.99,'yes'),(2,'shoes3',30.99,'no'),(3,'trousers1',10.99,'yes'),(4,'trousers2',20.99,'yes'),(5,'trousers3',30.99,'no'),(6,'shirt1',10.99,'yes'),(7,'shirt2',20.99,'yes'),(8,'shirt3',30.99,'no'),(9,'tie1',15.99,'yes'),(10,'tie2',15.99,'yes');
+/*!40000 ALTER TABLE `productslist` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -54,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-02-23 12:42:29
+-- Dump completed on 2015-02-20  1:41:39
