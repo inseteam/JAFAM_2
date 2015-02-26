@@ -17,14 +17,26 @@ body {
   margin-bottom: 2.5%;
   margin-top: 1%;
 }
-}
+
 
 .Notice{
   text-align: center;
 }
 .Notice h1{
   text-align: center;
-  text-size: 150;
+  font-size: 300%;
+  padding: 0;
+  margin: 1%;
+  line-height: 125%;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 175%;
 }
 
 nav{
@@ -40,8 +52,8 @@ nav input, button{
   background: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#999));
   color: black;
   transition: 1s;
-  width: 5em auto;
-  height: 3em auto;
+  width: 5em;
+  height: 3em;
   border:none;
 }
 
@@ -63,7 +75,7 @@ nav input:focus{
 
 .Notice, .mainPage {
     margin: 2%;
-    margin_top: 5%;
+    margin-top: 2%;
     padding: 2.5%;
 }
 
