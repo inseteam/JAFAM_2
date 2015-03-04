@@ -1,8 +1,3 @@
-<?php
-if (!file_exists("content/about_us.txt"))
-echo "---- No content yet ----";
-else
-{ $filehandle = fopen("content/about_us.txt", "r");
-  while (!feof($filehandle))
-  echo fgets($filehandle); }
-  ?>
+<!--This is the content that will be displayed on the About Us page-->
+
+<p>Nothing here yet!</p>
