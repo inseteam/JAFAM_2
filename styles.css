@@ -21,6 +21,8 @@ body {
 
 .Notice{
   text-align: center;
+  margin-top: 2%;
+  padding: 2.5%;
 }
 .Notice h1{
   text-align: center;
