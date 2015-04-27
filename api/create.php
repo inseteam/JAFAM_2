@@ -1,9 +1,30 @@
 <!--Create! page content-->
-<h1>Work Breakdown Tree (WBT)</h1>
+<h1>Create Gantt Chart</h1>
+<div class="inputs">
+	<form action="" id="ganttform" name="ganttform" method="post">
+		<label id="taskid" for="ganttNum">Task ID: </label>
+		<input type="text" name="ganttNum" id="ganttNum" onchange="valGanttNum()">
+		<label for="ganttName">Task Name: </label>
+		<input type="text" name="ganttName" id="ganttName">
+		<label for="ganttPredecessors">Predecessors: </label>
+		<input type="text" name="ganttPredecessors" id="ganttPredecessors">
+		<label for="ganttStartDate">Start Date: </label>
+		<input type="date" name="ganttStartDate" id="ganttStartDate">
+		<label for="ganttEndDate">End Date: </label>
+		<input type="date" name="ganttEndDate" id="ganttEndDate">
+	</form>
+	<button id="addgantt" onclick="addGanttTask()">Add</button>
+</div>
+<div id="gantttasklist">
+
+</div>
+<button id="generategantt" onclick="">Generate</button>
+
+<h1>Create Work Breakdown Tree (WBT)</h1>
 <div class="inputs">
 	<form action="" id="wbtform" name="wbtform" method="post">
-		<label for="addTaskNum">Task Number: </label>
-		<input type="text" name="addTaskNum" id="addTaskNum">
+		<label id="tasknum" for="addTaskNum">Task Number: </label>
+		<input type="text" name="addTaskNum" id="addTaskNum" onchange="valWBTNum()">
 		<label for="addTaskName">Task Name: </label>
 		<input type="text" name="addTaskName" id="addTaskName">
 	</form>
