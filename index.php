@@ -9,6 +9,7 @@
   <script type="text/javascript" src='lib/ajax.js'> </script>
   <script type="text/javascript" src='lib/buttons.js'> </script>
   <script type="text/javascript" src='lib/menu.js'> </script>
+  <script type="text/javascript" src='lib/create.js'> </script>
 
 </head>
 <body>
@@ -40,7 +41,7 @@
         <section id="content">
             
         </section>
-      <iframe name="table_content" id="table_content"></iframe>
+      <!--<iframe name="table_content" id="table_content"></iframe> Removing this line for the demo-->
     </section>
   </article>
 </body>

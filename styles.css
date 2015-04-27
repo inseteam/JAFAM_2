@@ -136,7 +136,7 @@ nav input:focus{
 
 #content {
     margin: 0;
-    padding 0 !important;
+    padding: 0 !important;
 }
 
 
@@ -177,3 +177,14 @@ table{
 table thead td{
   width:8em;
 }
+
+/*New input forms for demo*/
+div.inputs input, label, button {
+	display: block;
+	margin: 2px;
+}
+
+div.inputs button {
+	padding: 5px;
+}
+
